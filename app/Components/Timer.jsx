@@ -2,7 +2,7 @@ import React from "react";
 
 const Timer = () => {
   return (
-    <div className="bg-[#5D3794] flex lg:text-base text-sm justify-between flex-col Jmd:flex-row px-4 gap-5 py-7 Jmd:px-10 Jmd:py-0 text-white text-center">
+    <div className="bg-[#5D3794] flex lg:text-base text-sm justify-around flex-col Jmd:flex-row px-4 gap-5 py-7 Jmd:px-10 Jmd:py-0 text-white text-center">
       <p className="self-center">
         A day in the life. Please join us as we walk through a day of a Ed
         student. Request a tour
