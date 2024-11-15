@@ -61,26 +61,26 @@ const ContestAnnouncement = () => {
       <div className="absolute inset-0 z-0 bg-[#26014E] opacity-90"></div>
 
       {/* Main Content */}
-      <div className="relative z-10 grid gap-10 text-white text-center">
+      <div className="relative z-10 grid gap-7 text-white text-center">
         {/* Title Section */}
-        <div className="space-y-2 mt-10 lg:mt-0">
+        <div className="space-y-2 xl:mt-7 mt-3">
           <h4 className="text-sm md:text-lg capitalize">Contest Schedule</h4>
-          <h1 className="text-3xl md:text-3xl xl:text-4xl capitalize font-semibold">
+          <h1 className="text-xl md:text-2xl xl:text-3xl capitalize font-semibold">
             The National I am Scientist System
           </h1>
-          <hr className="border w-24 mx-auto mt-3" />
+          <hr className="border w-24 mx-auto mt-1" />
         </div>
 
         {/* Announcement Card Section */}
-        <div className="flex flex-col lg:flex-row items-center justify-center gap-2 md:gap-6">
+        <div className="flex flex-col lg:flex-row items-center justify-center gap-7">
           {announcement.map((ann) => (
             <div
-              className="relative border-2 rounded-3xl p-4 flex flex-col gap-6 w-fit"
+              className="relative border-2 rounded-3xl p-4 flex flex-col gap-4 w-fit"
               style={{ borderColor: ann.color }}
               key={ann.id}
             >
               {/* Title and Heading */}
-              <div className="space-y-3 ">
+              <div className="space-y-1">
                 <h1
                   className="text-3xl md:text-4xl italic text-left"
                   style={{ color: ann.color, fontFamily: "Pacifico" }}
@@ -98,12 +98,12 @@ const ContestAnnouncement = () => {
                 <div className="flex-1 text-left">
                   <span>{ann.sub1}</span>
                   <span
-                    className={`block mt-1 px-2 py-1 rounded-md text-sm font-medium ${ann.id == 3 ? "text-[#26014E]" : "text-white"}`}
+                    className={`block px-2 py-1 rounded-md text-sm font-medium ${ann.id == 3 ? "text-[#26014E]" : "text-white"}`}
                     style={{ backgroundColor: ann.color }}
                   >
                     {ann.date}
                   </span>
-                  <hr className="border-t-2 mt-2" />
+                  <hr className="border-t-2 mt-1" />
                 </div>
               </div>
 
@@ -113,12 +113,12 @@ const ContestAnnouncement = () => {
                 <div className="flex-1 text-left">
                   <span>{ann.sub2}</span>
                   <span
-                    className={`block mt-1 px-2 py-1 rounded-md text-sm font-medium ${ann.id == 3 ? "text-[#26014E]" : "text-white"}`}
+                    className={`block px-2 py-1 rounded-md text-sm font-medium ${ann.id == 3 ? "text-[#26014E]" : "text-white"}`}
                     style={{ backgroundColor: ann.color }}
                   >
                     {ann.date}
                   </span>
-                  <hr className="border-t-2 mt-2" />
+                  <hr className="border-t-2 mt-1" />
                 </div>
               </div>
 
@@ -128,12 +128,12 @@ const ContestAnnouncement = () => {
                 <div className="flex-1 text-left">
                   <span>{ann.sub3}</span>
                   <span
-                    className={`block mt-1 px-2 py-1 rounded-md text-sm font-medium ${ann.id == 3 ? "text-[#26014E]" : "text-white"}`}
+                    className={`block px-2 py-1 rounded-md text-sm font-medium ${ann.id == 3 ? "text-[#26014E]" : "text-white"}`}
                     style={{ backgroundColor: ann.color }}
                   >
                     {ann.date}
                   </span>
-                  <hr className="border-t-2 mt-2" />
+                  <hr className="border-t-2 mt-1" />
                 </div>
               </div>
 
