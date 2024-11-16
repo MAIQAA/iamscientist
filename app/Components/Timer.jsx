@@ -40,22 +40,34 @@ const Timer = () => {
         <p className="text-sm">Admissions to Competition Starts in</p>
         <div className="flex justify-center items-end h-full mt-2">
           <div className="flex flex-col items-center">
-            <p className="text-2xl">{timeLeft.days}</p>
+            <p className="text-2xl">
+              {timeLeft.days < 10 ? `0${timeLeft.days}` : timeLeft.days}
+            </p>
             <span className="text-xs">Days</span>
           </div>
-          <p className="text-2xl mx-1 self-center">:</p>
+          <p className="text-2xl mx-1 self-start">:</p>
           <div className="flex flex-col items-center">
-            <p className="text-2xl">{timeLeft.hours}</p>
+            <p className="text-2xl">
+              {timeLeft.hours < 10 ? `0${timeLeft.hours}` : timeLeft.hours}
+            </p>
             <span className="text-xs">Hours</span>
           </div>
-          <p className="text-2xl mx-1 self-center">:</p>
+          <p className="text-2xl mx-1 self-start">:</p>
           <div className="flex flex-col items-center">
-            <p className="text-2xl">{timeLeft.minutes}</p>
+            <p className="text-2xl">
+              {timeLeft.minutes < 10
+                ? `0${timeLeft.minutes}`
+                : timeLeft.minutes}
+            </p>
             <span className="text-xs">Minutes</span>
           </div>
-          <p className="text-2xl mx-1 self-center">:</p>
+          <p className="text-2xl mx-1 self-start">:</p>
           <div className="flex flex-col items-center">
-            <p className="text-2xl">{timeLeft.seconds}</p>
+            <p className="text-2xl">
+              {timeLeft.seconds < 10
+                ? `0${timeLeft.seconds}`
+                : timeLeft.seconds}
+            </p>
             <span className="text-xs">Seconds</span>
           </div>
         </div>

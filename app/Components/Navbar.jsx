@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <>
       {/* Navbar for Large Devices */}
-      <div className="lg:flex hidden absolute bg-[#04236E] top-0 justify-around items-center self-center Jmd:px-10 px-7 py-3 w-full z-50 text-white" id="navbar">
+      <div className="lg:flex hidden bg-[#04236E] justify-around items-center self-center Jmd:px-10 px-7 py-3 w-full z-50 text-white" id="navbar">
         <Image
           src={"/Scientist-Logo-1 1.png"}
           width={140}
@@ -35,7 +35,7 @@ const Navbar = () => {
       </div>
 
       {/* Navbar for Small and Medium Devices */}
-      <div className="flex lg:hidden absolute bg-[#04236E] top-0 justify-between items-center Jmd:px-10 px-4 py-3 w-full z-50 text-white">
+      <div className="flex lg:hidden bg-[#04236E] justify-between items-center Jmd:px-10 px-4 py-3 w-full z-50 text-white">
         <Image
           src={"/Scientist-Logo-1 1.png"}
           width={100}
